@@ -16,6 +16,11 @@
         .cta-button { background: #25d366; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px; font-weight: bold; }
         footer { background: var(--primary); color: white; text-align: center; padding: 20px; margin-top: 40px; }
         .price-tag { color: var(--accent); font-weight: bold; font-size: 1.2rem; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 40px; }
+.product-card { border: 1px solid #eee; border-radius: 10px; overflow: hidden; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.product-card img { width: 100%; height: 200px; object-fit: cover; }
+.product-info { padding: 15px; }
+.price { color: #e74c3c; font-weight: bold; font-size: 1.2em; }
     </style>
 </head>
 <body>
@@ -56,6 +61,32 @@
     <p>📍 Ubicados Calle 10 # 9 -34 La esmeralda en Zipaquirá, Cundinamarca (Código Postal 250251)</p>
     <p>📞 Contacto: 3196097830 | </p>
     <p>&copy; 2026 - Tu Socio en Costura</p>
+<section id="catalogo">
+    <h2 style="text-align:center;">Máquinas Disponibles</h2>
+    <div class="product-grid">
+        
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200?text=Maquina+Recta" alt="Máquina Recta">
+            <div class="product-info">
+                <h3>Máquina Recta Industrial mecatrónica</h3>
+                <p>Marca Typical - Motor ahorrador silencioso.</p>
+                <p class="price">$1.900.000</p>
+                <a href="https://wa.me/573196097830?text=Me+interesa+la+Recta+Juki" class="cta-button" style="padding: 10px 20px; font-size: 0.9em;">Preguntar</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200?text=Fileteadora" alt="Fileteadora">
+            <div class="product-info">
+                <h3>Fileteadora 4 hilos mecatrónica</h3>
+                <p>Ideal para tejidos de punto y lencería.</p>
+                <p class="price">$2.100.000</p>
+                <a href="https://wa.me/573196097830?text=Me+interesa+la+Fileteadora" class="cta-button" style="padding: 10px 20px; font-size: 0.9em;">Preguntar</a>
+            </div>
+        </div>
+
+    </div>
+</section>
 </footer>
 
 </body>
